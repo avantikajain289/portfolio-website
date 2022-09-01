@@ -1,0 +1,41 @@
+/*
+Colours used:
+Primary Colour (Blue): rgba (31,26,235,1.0);
+Primary Colour (White): rgba (255,255,255,1.0)
+Secondary Colour (Dark Gray): rgba (21,21,21,1.0);
+*/
+/*
+Font Sizes and Weights
+*/
+
+body {
+  background-color: rgba (21,21,21,1.0);
+  font-family: 'Exo 2', sans-serif;
+  font-size: 16px; /* Sets the font size to 16px */
+  font-weight: 300; /* Sets the font weight to 300 */
+  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
+  color: rgba (255,255,255,1.0);
+}
+
+h1, h2, h3, h4 {
+  line-height: 1.4;
+}
+h1 {
+  font-size: 2.75em;
+  font-weight: 700;
+}
+
+h2 {
+  font-family: 'Noto Serif JP'
+  font-size: 2.25em;
+  font-weight: 600;
+}
+
+h3 {
+  font-size: 1.75em;
+  font-weight: 600;
+}
+h4 {
+  font-size: 1.35em;
+  font-weight: 400;
+}
