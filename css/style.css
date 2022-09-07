@@ -1,41 +1,111 @@
 /*
 Colours used:
-Primary Colour (Blue): rgba (31,26,235,1.0);
-Primary Colour (White): rgba (255,255,255,1.0)
-Secondary Colour (Dark Gray): rgba (21,21,21,1.0);
+Primary Colour (Blue): rgba (31, 26, 235, 1.0), hex:#1F1AEB ;
+Primary Colour (White): rgba (255, 255, 255, 1.0), hex: #FFFFFF;
+Secondary Colour (Dark Gray): rgba (21, 21, 21, 1.0), hex: #151515;
+Secondary Colour (Light Gray): rgba (50, 50, 50, 1.0), hex: #323232;
+Tertiary Colour (Light Coral/Light Pink): rgba (246, 130, 140, 1.0), hex: #F6828C;
+Tertiary Colour (Fire Opal/Light Orange): rgba (222, 100, 73, 1.0), hex: #DE6449;
 */
 /*
 Font Sizes and Weights
 */
-
 body {
-  background-color: rgba (21,21,21,1.0);
+  background-color: rgba(21, 21, 21, 1.0);
   font-family: 'Exo 2', sans-serif;
-  font-size: 16px; /* Sets the font size to 16px */
-  font-weight: 300; /* Sets the font weight to 300 */
-  line-height: 1.6; /* Sets the line-height to 1.6 * the font-size */
-  color: rgba (255,255,255,1.0);
+  font-size: 24px;
+  /* Sets the font size to 16px */
+  font-weight: 300;
+  /* Sets the font weight to 300 */
+  line-height: 1.6;
+  /* Sets the line-height to 1.6 * the font-size */
+  color: rgba(255, 255, 255, 1.0);
 }
 
 h1, h2, h3, h4 {
   line-height: 1.4;
 }
+
 h1 {
-  font-size: 2.75em;
+  font-size: 2.5em;
   font-weight: 700;
 }
 
 h2 {
-  font-family: 'Noto Serif JP'
-  font-size: 2.25em;
+  font-size: 1.67em;
   font-weight: 600;
 }
 
 h3 {
-  font-size: 1.75em;
+  font-family: 'Noto Serif JP';
+  font-size: 1.084em;
   font-weight: 600;
 }
+
 h4 {
   font-size: 1.35em;
   font-weight: 400;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  color: rgba(255, 255, 255, 1.0);
+  /* White */
+  text-decoration: none;
+  /* No underlining */
+}
+
+a:visited {
+  /* visited link */
+  color: rgba(246, 130, 140, 1.0);
+  /* Light Coral/Light Pink */
+}
+
+a:hover,
+a:focus {
+  color: rgba(174, 174, 174, 1.0);
+  /* Lighter Gray */
+  text-decoration: underline;
+  /* Underlining when hovering over a link */
+}
+
+a:active {
+  /* selected link */
+  color: rgba(222, 100, 73, 1.0);
+  /* Fire Opal/Light Orange */
+}
+
+.button {
+  display: inline-block;
+  /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+  background-color: rgba(31, 26, 235, 1.0);
+  color: rgba(255, 255, 255, 1.0);
+  /* needed to override the default link color */
+  font-weight: 500;
+  padding: 15px;
+  border-radius: 50px;
+  border-bottom: 2px solid rgba(31, 26, 235, 1.0);
+  /* width of the border, type, color */
+  transition: 0.2s opacity;
+}
+
+.button:hover {
+  opacity: 0.8;
+  /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+}
+
+.button.contact {
+  background-color: rgba(255, 255, 255, 1.0);
+  color: rgba(31, 26, 235, 1.0);
+  text-transform: none;
+  border: 2px solid rgba(31, 26, 235, 1.0);
+}
+
+.button.contact:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: rgba(31, 26, 235, 0.8);
 }
