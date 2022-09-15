@@ -5,61 +5,56 @@
   <meta charset="utf-8">
   <title>Catharsis App</title>
   <meta name="author" content="Avantika Jain">
-  <meta name="description" content="Catharsis Native iOS and Android App">
+  <meta name="description" content="Sample meta description">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="www.cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="stylesheet" type="text/css" href="normalize.css">
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600;700&family=Noto+Serif+JP:wght@600&display=swap" rel="stylesheet">
-</head>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link href="www.fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600;700&family=Noto+Serif+JP:wght@600&display=swap" rel="stylesheet">
 
 <body>
   <header>
-    <div>
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 72 18">
-        <path d="M12.01,5.56v6.3h-.9v-2.67h-2.28c.03,.95,.13,1.92,.06,2.67h-.99v-.04c.24-2.16-.38-6.22,3.2-6.27h.9Zm-.9,3.44v-3.24c-2.04,.03-2.31,1.57-2.29,3.24h2.29Z" />
-        <path d="M12.77,5.56h.94l1.17,4.59c.11,.43,.23,.93,.17,1.4,2.33-.6,1.34-5.6,1.12-5.95v-.04h.99c.55,1.95-.04,5.66-2.11,6.19l-.67,.17-1.62-6.37Z" />
-        <path d="M21.92,5.56v6.3h-.9v-2.67h-2.28c.03,.95,.13,1.92,.06,2.67h-.99v-.04c.24-2.16-.38-6.22,3.21-6.27h.9Zm-.9,3.44v-3.24c-2.04,.03-2.31,1.57-2.29,3.24h2.29Z" />
-        <path
-          d="M23.69,5.56c.25,0,.23,0,.58,.77l1.91,4.11c.36,.77,.51,1.22,.62,1.22,0-.86-.57-5.46-.92-6.06v-.04h1.04c.23,.8,.08,3.66,.08,6.3h-.92c-.28,0-.31-.19-.82-1.29l-1.89-4.07c-.25-.53-.29-.75-.4-.75,0,.86,.57,5.46,.92,6.07v.04h-1.04c-.23-.8-.08-3.66-.08-6.3h.92Z" />
-        <path d="M32.05,5.56l.17,1.8h-.05c-.18-.72-.99-1.49-2.02-1.56,.02,.87,.15,2.41,.58,6.02v.04h-1.4v-.04c.42-3.61,.56-5.16,.58-6.02-1.04,.05-1.86,.84-2.04,1.56h-.05l.17-1.8h4.07Z" />
-        <path d="M32.99,5.56h.9v6.3h-.9V5.56Z" />
-        <path d="M38.85,11.87h-.93v-.04c.23-1.14-.04-3.36-1.38-3.36-.22,0-.52,.2-.69,.31l-.26,.16v2.93h-.9V5.56h.9v2c0,.68-.23,1.11-.44,1.38l.59-.37c1.21-.75,2.18-1.74,2.1-2.97v-.04h.99c0,1.04-1.09,1.96-2.16,2.66,1.47,.23,2.49,1.99,2.18,3.65Z" />
-        <path d="M43.78,5.56v6.3h-.9v-2.67h-2.28c.03,.95,.13,1.92,.06,2.67h-.99v-.04c.24-2.16-.38-6.22,3.2-6.27h.9Zm-.9,3.44v-3.24c-2.04,.03-2.31,1.57-2.29,3.24h2.29Z" />
-        <path d="M51.99,9.62c0,1.5-.85,2.3-1.92,2.3-1.8,0-2.25-1.66-2.38-2.3l.97-.69,.02,.04c-.03,.26,.1,2.74,1.39,2.74,1.02,0,1.02-1.14,1.02-2.49v-3.65h.9v4.05Z" />
-        <path d="M56.81,5.56v6.3h-.9v-2.67h-2.28c.03,.95,.13,1.92,.06,2.67h-.99v-.04c.24-2.16-.38-6.22,3.21-6.27h.9Zm-.9,3.44v-3.24c-2.04,.03-2.31,1.57-2.29,3.24h2.29Z" />
-        <path d="M57.62,5.56h.9v6.3h-.9V5.56Z" />
-        <path
-          d="M60.29,5.56c.25,0,.22,0,.58,.77l1.91,4.11c.36,.77,.51,1.22,.62,1.22,0-.86-.57-5.46-.92-6.06v-.04h1.04c.23,.8,.08,3.66,.08,6.3h-.92c-.28,0-.31-.19-.82-1.29l-1.89-4.07c-.25-.53-.29-.75-.41-.75,0,.86,.57,5.46,.92,6.07v.04h-1.04c-.22-.8-.08-3.66-.08-6.3h.92Z" />
-      </svg>
+    <div class="containerAbout">
+      <div class="logo">
+          <svg viewBox="0 0 250 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <g clip-path="url(#clip0_78_2)">
+              <path
+                d="M15.4033 12C-0.516719 12.2 2.24328 30.24 1.16328 39.84V40H5.56328C5.88328 36.68 5.40328 32.36 5.28328 28.16H15.4033V40H19.4033V12H15.4033ZM5.24328 27.28C5.12328 19.84 6.32328 13 15.4033 12.88V27.28H5.24328ZM30.007 40.28L32.967 39.52C42.167 37.16 44.767 20.68 42.327 12H37.927V12.16C38.927 13.72 43.327 35.92 32.967 38.6C33.207 36.52 32.687 34.32 32.207 32.4L27.007 12H22.807L30.007 40.28ZM59.4423 12C43.5223 12.2 46.2823 30.24 45.2023 39.84V40H49.6023C49.9223 36.68 49.4423 32.36 49.3223 28.16H59.4423V40H63.4423V12H59.4423ZM49.2823 27.28C49.1623 19.84 50.3623 13 59.4423 12.88V27.28H49.2823ZM67.2461 12C67.2461 23.72 66.6061 36.44 67.6061 40H72.2061V39.84C70.6461 37.12 68.1261 16.72 68.1261 12.88C68.6461 12.88 68.8061 13.84 69.9261 16.2L78.3261 34.28C80.6061 39.16 80.7261 40 81.9661 40H86.0461C86.0461 28.28 86.6861 15.56 85.6861 12H81.0861V12.2C82.6461 14.88 85.1661 35.28 85.1661 39.12C84.6861 39.12 84.0061 37.12 82.4061 33.68L73.9261 15.44C72.3261 12.04 72.4461 12 71.3261 12H67.2461ZM90.3873 12L89.6273 20H89.8673C90.6673 16.8 94.3473 13.32 98.9473 13.08C98.8673 16.92 98.2673 23.8 96.3873 39.84V40H102.587V39.84C100.707 23.8 100.107 16.96 100.027 13.08C104.587 13.4 108.187 16.8 108.987 20H109.227L108.467 12H90.3873ZM112.609 40H116.609V12H112.609V40ZM128.995 23.8C133.755 20.72 138.595 16.64 138.595 12H134.195V12.16C134.555 17.64 130.235 22.04 124.875 25.36L122.235 27C123.195 25.8 124.195 23.92 124.195 20.88V12H120.195V40H124.195V27L125.355 26.28C126.115 25.8 127.475 24.92 128.435 24.92C134.355 24.92 135.595 34.76 134.555 39.84V40H138.675C140.075 32.64 135.515 24.8 128.995 23.8ZM156.552 12C140.632 12.2 143.392 30.24 142.312 39.84V40H146.712C147.032 36.68 146.552 32.36 146.432 28.16H156.552V40H160.552V12H156.552ZM146.392 27.28C146.272 19.84 147.472 13 156.552 12.88V27.28H146.392ZM197.028 12H193.028V28.2C193.028 34.16 193.028 39.24 188.508 39.24C182.788 39.24 182.228 28.24 182.348 27.08L182.268 26.92L177.948 30C178.508 32.84 180.508 40.2 188.508 40.2C193.268 40.2 197.028 36.64 197.028 30V12ZM214.466 12C198.546 12.2 201.306 30.24 200.226 39.84V40H204.626C204.946 36.68 204.466 32.36 204.346 28.16H214.466V40H218.466V12H214.466ZM204.306 27.28C204.186 19.84 205.386 13 214.466 12.88V27.28H204.306ZM222.07 40H226.07V12H222.07V40ZM229.855 12C229.855 23.72 229.215 36.44 230.215 40H234.815V39.84C233.255 37.12 230.735 16.72 230.735 12.88C231.255 12.88 231.415 13.84 232.535 16.2L240.935 34.28C243.215 39.16 243.335 40 244.575 40H248.655C248.655 28.28 249.295 15.56 248.295 12H243.695V12.2C245.255 14.88 247.775 35.28 247.775 39.12C247.295 39.12 246.615 37.12 245.015 33.68L236.535 15.44C234.935 12.04 235.055 12 233.935 12H229.855Z"
+                fill="white" />
+            </g>
+            <defs>
+              <clipPath id="clip0_78_2">
+                <rect width="250" height="48" fill="white" />
+              </clipPath>
+            </defs>
+          </svg>
+      </div>
 
-      <nav>
+      <nav class="topnav">
         <ul>
           <li><a href="index.html">Work</a></li>
           <li><a href="about.html">About</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="#footer">Contact</a></li>
         </ul>
       </nav>
-
     </div>
   </header>
-  <main>
-    <div>
 
-      <div>
-        <h1>Catharsis</h1>
+  <main>
+    <div class="containerCatharsis">
+      <div class="row">
+        <h2>Catharsis</h2>
       </div>
-      <div>
+      <div class="row">
         <div>
           <picture>
             <source srcset="imgs/portfolio-website/catharsis-logo.png" media="(max-width:767px)">
             <img src="imgs/portfolio-website/catharsis-logo.png" alt="Catharsis Native App iOS Android">
           </picture>
-          <a href="#">Click Image to Zoom</a>
+          <a href="imgs/portfolio-website/catharsis-logo.png" class="caption">Click Image to Zoom</a>
         </div>
         <div>
-          <h2>Overview</h2>
+          <h3>Overview</h3>
           <p>
             This project was designed as a native mobile app for both Android and iOS platforms utilizing iOS and Material design guidelines. A movie app that curates movies for a week based on various genres. The app adds seven movies each week
             within all genres. This gives the user a more curated list within the genres they like and from directors around the globe.
@@ -68,9 +63,9 @@
           </p>
         </div>
       </div>
-      <div>
+      <div class="row">
         <div>
-          <h2>Problem</h2>
+          <h3>Problem</h3>
           <p>
             Existing media platforms have too much content and no one platform has the range all user’s enjoy. It invariably takes more time to find something to consume then to consume the content. People inevitably purchase multiple subscriptions
             to consume content and media that they enjoy on each platform. This does not create a cohesive and consistent algorithm or suggested choices for user’s. There is a market for user’s that enjoy quality over quantity. Film and cinema’s
@@ -82,44 +77,44 @@
             <source srcset="imgs/portfolio-website/catharsis-home-page-screens.png" media="(max-width:767px)">
             <img src="imgs/portfolio-website/catharsis-home-page-screens.png" alt="iOS and Android Home">
           </picture>
-          <a href="#">Click Image to Zoom</a>
+          <a href="imgs/portfolio-website/catharsis-home-page-screens.png" class="caption">Click Image to Zoom</a>
           <picture>
             <source srcset="imgs/portfolio-website/catharsis-colour-palette-screens.png" media="(max-width:767px)">
             <img src="imgs/portfolio-website/catharsis-colour-palette-screens.png" alt="Colour palette generator">
           </picture>
-          <a href="#">Click Image to Zoom</a>
+          <a href="imgs/portfolio-website/catharsis-colour-palette-screens.png" class="caption">Click Image to Zoom</a>
         </div>
       </div>
-      <div>
+      <div class="row">
         <div>
           <picture>
-            <source srcset="imgs/portfolio-website/catharsis-competitve-analysis-media.png" media="(max-width:767px)">
-            <img src="imgs/portfolio-website/catharsis-competitve-analysis-media.png" alt="Media Competitive Analysis">
+            <source srcset="imgs/portfolio-website/catharsis-competitive-analysis-media.png" media="(max-width:767px)">
+            <img src="imgs/portfolio-website/catharsis-competitive-analysis-media.png" alt="Media Competitive Analysis">
           </picture>
-          <a href="#">Click Image to Zoom</a>
+          <a href="imgs/portfolio-website/catharsis-competitive-analysis-media.png" class="caption">Click Image to Zoom</a>
         </div>
         <div>
           <picture>
-            <source srcset="imgs/portfolio-website/catharsis-competitve-analysis-colour-palette.png" media="(max-width:767px)">
-            <img src="imgs/portfolio-website/catharsis-competitve-analysis-colour-palette.png" alt="Colour Palette Competitive Analysis">
+            <source srcset="imgs/portfolio-website/catharsis-competitive-analysis-colour-palette.png" media="(max-width:767px)">
+            <img src="imgs/portfolio-website/catharsis-competitive-analysis-colour-palette.png" alt="Colour Palette Competitive Analysis">
           </picture>
-          <a href="#">Click Image to Zoom</a>
+          <a href="imgs/portfolio-website/catharsis-competitive-analysis-colour-palette.png" class="caption">Click Image to Zoom</a>
         </div>
         <div>
-          <h2>Competitive Analysis</h2>
-          <h3>For Media</h3>
+          <h3>Competitive Analysis</h3>
+          <h4>For Media</h4>
           <p>
             The competitive analysis for media channels like Mubi, Criterion Collection, and Netflix brought about insights about users needs, pain points, and preferences for consuming content. These were some of the insights collected from the
             analysis.
           </p>
-          <h3>For Colour Palettes</h3>
+          <h4>For Colour Palettes</h4>
           <p>
             The competitive analysis for color palette apps like Coolers (iOS) and Pigments (Android) were useful in understanding the overall flows and functions to incorporate into the app. There were utilitarian functionalities along with a
             visually stunning layout and UX.
           </p>
         </div>
       </div>
-      <div>
+      <div class="row">
         <div>
           <div>
             <h2>User Pain Points</h2>
@@ -134,11 +129,11 @@
               <source srcset="imgs/portfolio-website/catharsis-user-pain-points.png" media="(max-width:767px)">
               <img src="imgs/portfolio-website/catharsis-user-pain-points.png" alt="User Pain Points">
             </picture>
-            <a href="#">Click Image to Zoom</a>
+            <a href="imgs/portfolio-website/catharsis-user-pain-points.png" class="caption">Click Image to Zoom</a>
           </div>
         </div>
       </div>
-      <div>
+      <div class="row">
         <div>
           <h2>Defining the Problem</h2>
         </div>
@@ -152,12 +147,12 @@
           <h3>What?</h3>
           <p>
             Tasks to accomplish:
+          </p>
           <ul>
             <li>Select and play movies.</li>
             <li>Create color palettes using movie stills and save them.</li>
             <li>Add a movie to a watch list.</li>
           </ul>
-          </p>
         </div>
         <div>
           <h3>When?</h3>
@@ -178,7 +173,7 @@
           </p>
         </div>
       </div>
-      <div>
+      <div class="row">
         <div>
           <div>
             <h2>Persona's</h2>
@@ -194,17 +189,17 @@
               <source srcset="imgs/portfolio-website/catharsis-persona.png" media="(max-width:767px)">
               <img src="imgs/portfolio-website/catharsis-persona.png" alt="Persona description">
             </picture>
-            <a href="#">Click Image to Zoom</a>
+            <a href="imgs/portfolio-website/catharsis-persona.png" class="caption">Click Image to Zoom</a>
           </div>
         </div>
       </div>
-      <div>
+      <div class="row">
         <div>
           <picture>
             <source srcset="imgs/portfolio-website/catharsis-user-flow.png" media="(max-width:767px)">
             <img src="imgs/portfolio-website/catharsis-user-flow.png" alt="User flow diagram">
           </picture>
-          <a href="#">Click Image to Zoom</a>
+          <a href="imgs/portfolio-website/catharsis-user-flow.png" class="caption">Click Image to Zoom</a>
         </div>
         <div>
           <div>
@@ -215,7 +210,7 @@
           </div>
         </div>
       </div>
-      <div>
+      <div class="row">
         <div>
           <h2>Low Fidelity Wireframes</h2>
         </div>
@@ -235,18 +230,18 @@
               <source srcset="imgs/portfolio-website/catharsis-lofi-wireframes-ios.png" media="(max-width:767px)">
               <img src="imgs/portfolio-website/catharsis-lofi-wireframes-ios.png" alt="iOS low fidelity wireframes">
             </picture>
-            <a href="#">Click Image to Zoom</a>
+            <a href="imgs/portfolio-website/catharsis-lofi-wireframes-ios.png" class="caption">Click Image to Zoom</a>
           </div>
           <div>
             <picture>
               <source srcset="imgs/portfolio-website/catharsis-lofi-wireframes-android.png" media="(max-width:767px)">
               <img src="imgs/portfolio-website/catharsis-lofi-wireframes-android.png" alt="Android low fidelity wireframes">
             </picture>
-            <a href="#">Click Image to Zoom</a>
+            <a href="imgs/portfolio-website/catharsis-lofi-wireframes-android.png" class="caption">Click Image to Zoom</a>
           </div>
         </div>
       </div>
-      <div>
+      <div class="row">
         <div>
           <h2>Style Guide</h2>
         </div>
@@ -255,17 +250,17 @@
             <source srcset="imgs/portfolio-website/catharsis-style-guide-typography-colour.png" media="(max-width:767px)">
             <img src="imgs/portfolio-website/catharsis-style-guide-typography-colour.png" alt="Typography and colour style guide">
           </picture>
-          <a href="#">Click Image to Zoom</a>
+          <a href="imgs/portfolio-website/catharsis-style-guide-typography-colour.png" class="caption">Click Image to Zoom</a>
         </div>
         <div>
           <picture>
             <source srcset="imgs/portfolio-website/catharsis-style-guide-components.png" media="(max-width:767px)">
-            <img src="imgs/portfolio-website/ccatharsis-style-guide-components.png" alt="Component style guide">
+            <img src="imgs/portfolio-website/catharsis-style-guide-components.png" alt="Component style guide">
           </picture>
-          <a href="#">Click Image to Zoom</a>
+          <a href="imgs/portfolio-website/catharsis-style-guide-components.png" class="caption">Click Image to Zoom</a>
         </div>
       </div>
-      <div>
+      <div class="row">
         <div>
           <div>
             <h2>Final Design</h2>
@@ -286,106 +281,108 @@
             <source srcset="imgs/portfolio-website/catharsis-home-navigation.png" media="(max-width:767px)">
             <img src="imgs/portfolio-website/catharsis-home-navigation.png" alt="Home and navigation screens Catharsis">
           </picture>
-          <a href="#">Click Image to Zoom</a>
+          <a href="imgs/portfolio-website/catharsis-home-navigation.png" class="caption">Click Image to Zoom</a>
         </div>
         <div>
           <picture>
             <source srcset="imgs/portfolio-website/catharsis-login.png" media="(max-width:767px)">
             <img src="imgs/portfolio-website/catharsis-login.png" alt="Login screens Catharsis">
           </picture>
-          <a href="#">Click Image to Zoom</a>
+          <a href="imgs/portfolio-website/catharsis-login.png" class="caption">Click Image to Zoom</a>
         </div>
         <div>
           <picture>
             <source srcset="imgs/portfolio-website/catharsis-movie.png" media="(max-width:767px)">
             <img src="imgs/portfolio-website/catharsis-movie.png" alt="Movie screens Catharsis">
           </picture>
-          <a href="#">Click Image to Zoom</a>
+          <a href="imgs/portfolio-website/catharsis-movie.png" class="caption">Click Image to Zoom</a>
         </div>
         <div>
           <picture>
             <source srcset="imgs/portfolio-website/catharsis-colour-palette.png" media="(max-width:767px)">
             <img src="imgs/portfolio-website/catharsis-colour-palette.png" alt="Colour palette screens Catharsis">
           </picture>
+          <a href="imgs/portfolio-website/catharsis-colour-palette.png" class="caption">Click Image to Zoom</a>
+        </div>
           <div>
             <picture>
               <source srcset="imgs/portfolio-website/catharsis-saving.png" media="(max-width:767px)">
               <img src="imgs/portfolio-website/catharsis-saving.png" alt="Saving screens Catharsis">
             </picture>
-            <a href="#">Click Image to Zoom</a>
+            <a href="imgs/portfolio-website/catharsis-saving.png" class="caption">Click Image to Zoom</a>
           </div>
         </div>
+      </div class="row">
+      <div>
+        <div>
+          <a href="#" target="_blank" class="button">Try out the Prototype</a>
+        </div>
+        <div>
+          <a href="www.behance.net/gallery/149764675/Catharsis-Movie-Streaming-App" target="_blank" class="button contact">Take a deeper look on Behance</a>
+        </div>
       </div>
       <div>
         <div>
-          <a href="#" target="_blank">Try out the Prototype</a>
+          <a href="#" target="_self">Verve</a>
         </div>
         <div>
-          <a href="www.behance.net/gallery/149764675/Catharsis-Movie-Streaming-App" target="_blank">Take a deeper look on Behance</a>
+            <a href="#" target="_self">Quiet Carpenter</a>
         </div>
       </div>
-      <div>
-        <div>
-          <p>
-            <Verve </p>
-        </div>
-        <div>
-          <p>
-            Quiet Carpenter >
-          </p>
-        </div>
+      <div class="row">
+        <a href="#header">Back to the top icon</a>
       </div>
-      <div>
-        <a href="#">Back to the top icon</a>
-      </div>
-    </div>
   </main>
 
-  <footer>
-    <div>
-      <h5>Let's Connect</h5>
-      <p>Looking to collaborate, have an amazing role or just want to have a coffee chat? Please drop me an email here.</p>
-      <a href="mailto:avantika2809@gmail.com">Send Email</a>
-    </div>
-    <div>
-      <a href="www.linkedin.com/in/avantikaj/" target="_blank">
-        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <g clip-path="url(#clip0_45_14)">
-            <rect width="32" height="32" fill="white" />
-            <path d="M32 16C32 7.16344 24.8366 -1.08564e-06 16 -6.99382e-07C7.16344 -3.13124e-07 -1.08564e-06 7.16344 -6.99382e-07 16C-3.13124e-07 24.8366 7.16344 32 16 32C24.8366 32 32 24.8366 32 16Z" fill="white" />
-            <path
-              d="M25.1926 17.276V23.6434H21.5004V17.703C21.5004 16.2112 20.968 15.1926 19.6312 15.1926C18.6109 15.1926 18.0044 15.8783 17.7373 16.5426C17.6401 16.7799 17.6154 17.1096 17.6154 17.4425V23.6434H13.9232C13.9232 23.6434 13.9726 13.5806 13.9232 12.5388H17.6154V14.113C17.6088 14.1262 17.5972 14.1377 17.5906 14.1492H17.6154V14.113C18.1066 13.358 18.9818 12.2784 20.9433 12.2784C23.3729 12.2784 25.1942 13.8657 25.1942 17.2744L25.1926 17.276ZM10.0596 7.18848C8.79699 7.18848 7.97119 8.01757 7.97119 9.10709C7.97119 10.1966 8.77391 11.0257 10.0118 11.0257H10.0365C11.3238 11.0257 12.1249 10.1735 12.1249 9.10709C12.1002 8.01757 11.3238 7.18848 10.0612 7.18848H10.0596ZM8.19041 23.6451H11.8809V12.5405H8.19041V23.6451Z"
-              fill="#1F1AEB" />
-          </g>
-          <defs>
-            <clipPath id="clip0_45_14">
-              <rect width="32" height="32" fill="white" />
-            </clipPath>
-          </defs>
-        </svg>
-      </a>
-      <a href="www.behance.net/avantikajain" target="_blank">
-        <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <g clip-path="url(#clip0_45_2)">
-            <rect width="32" height="32" fill="white" />
-            <path d="M0 15.9992C0 7.16387 7.16387 0 15.9992 0C24.8345 0 32 7.16387 32 15.9992C32 24.8345 24.8362 31.9984 15.9992 31.9984C7.16222 31.9984 0 24.8362 0 15.9992Z" fill="white" />
-            <path
-              d="M14.1681 15.3642C14.1681 15.3642 15.9648 15.2307 15.9648 13.1224C15.9648 11.0141 14.4945 9.98389 12.6318 9.98389H6.50146V21.7665H12.6318C12.6318 21.7665 16.3736 21.8852 16.3736 18.2884C16.3736 18.2884 16.5368 15.3642 14.1681 15.3642V15.3642ZM9.20316 12.079H12.6318C12.6318 12.079 13.4642 12.079 13.4642 13.3054C13.4642 14.5318 12.9747 14.7082 12.4192 14.7098H9.20316V12.079V12.079ZM12.4736 19.6731H9.20316V16.5247H12.6318C12.6318 16.5247 13.873 16.5082 13.873 18.1434C13.873 19.5066 12.9648 19.6599 12.4736 19.6747V19.6731Z"
-              fill="#1F1AEB" />
-            <path d="M23.6938 10.678H18.8311V12.1286H23.6938V10.678Z" fill="#1F1AEB" />
-            <path
-              d="M21.3645 12.9824C16.8331 12.9824 16.838 17.5088 16.838 17.5088C16.838 17.5088 16.5265 22.0122 21.3645 22.0122C21.3645 22.0122 25.3964 22.243 25.3964 18.8786H23.3228C23.3228 18.8786 23.3904 20.1462 21.4337 20.1462C21.4337 20.1462 19.3601 20.2847 19.3601 18.0956H25.4657C25.4657 18.0956 26.1333 12.9807 21.3645 12.9807V12.9824ZM19.3386 16.5247C19.3386 16.5247 19.5908 14.7082 21.4123 14.7082C23.2338 14.7082 23.209 16.5247 23.209 16.5247H19.3386V16.5247Z"
-              fill="#1F1AEB" />
-          </g>
-          <defs>
-            <clipPath id="clip0_45_2">
-              <rect width="32" height="32" fill="white" />
-            </clipPath>
-          </defs>
-        </svg>
-      </a>
+  <footer id="footer">
+    <div class="containerfooter">
       <div>
-        <p>Copyright Avantika Jain 2022</p>
+        <h5>Let's Connect</h5>
+        <p>Looking to collaborate, have an amazing role or just want to have a coffee chat? Please drop me an email here.</p>
+        <a href="mailto:avantika2809@gmail.com" class="button contact">Send Email</a>
+      </div>
+      <div>
+        <div>
+          <a href="www.linkedin.com/in/avantikaj/" target="_blank">
+            <svg width="32" height="32" viewBox="0a 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_45_14)">
+                <rect width="32" height="32" fill="white" />
+                <path d="M32 16C32 7.16344 24.8366 -1.08564e-06 16 -6.99382e-07C7.16344 -3.13124e-07 -1.08564e-06 7.16344 -6.99382e-07 16C-3.13124e-07 24.8366 7.16344 32 16 32C24.8366 32 32 24.8366 32 16Z" fill="white" />
+                <path
+                  d="M25.1926 17.276V23.6434H21.5004V17.703C21.5004 16.2112 20.968 15.1926 19.6312 15.1926C18.6109 15.1926 18.0044 15.8783 17.7373 16.5426C17.6401 16.7799 17.6154 17.1096 17.6154 17.4425V23.6434H13.9232C13.9232 23.6434 13.9726 13.5806 13.9232 12.5388H17.6154V14.113C17.6088 14.1262 17.5972 14.1377 17.5906 14.1492H17.6154V14.113C18.1066 13.358 18.9818 12.2784 20.9433 12.2784C23.3729 12.2784 25.1942 13.8657 25.1942 17.2744L25.1926 17.276ZM10.0596 7.18848C8.79699 7.18848 7.97119 8.01757 7.97119 9.10709C7.97119 10.1966 8.77391 11.0257 10.0118 11.0257H10.0365C11.3238 11.0257 12.1249 10.1735 12.1249 9.10709C12.1002 8.01757 11.3238 7.18848 10.0612 7.18848H10.0596ZM8.19041 23.6451H11.8809V12.5405H8.19041V23.6451Z"
+                  fill="#1F1AEB" />
+              </g>
+              <defs>
+                <clipPath id="clip0_45_14">
+                  <rect width="32" height="32" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+          <a href="www.behance.net/avantikajain" target="_blank">
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_45_2)">
+                <rect width="32" height="32" fill="white" />
+                <path d="M0 15.9992C0 7.16387 7.16387 0 15.9992 0C24.8345 0 32 7.16387 32 15.9992C32 24.8345 24.8362 31.9984 15.9992 31.9984C7.16222 31.9984 0 24.8362 0 15.9992Z" fill="white" />
+                <path
+                  d="M14.1681 15.3642C14.1681 15.3642 15.9648 15.2307 15.9648 13.1224C15.9648 11.0141 14.4945 9.98389 12.6318 9.98389H6.50146V21.7665H12.6318C12.6318 21.7665 16.3736 21.8852 16.3736 18.2884C16.3736 18.2884 16.5368 15.3642 14.1681 15.3642V15.3642ZM9.20316 12.079H12.6318C12.6318 12.079 13.4642 12.079 13.4642 13.3054C13.4642 14.5318 12.9747 14.7082 12.4192 14.7098H9.20316V12.079V12.079ZM12.4736 19.6731H9.20316V16.5247H12.6318C12.6318 16.5247 13.873 16.5082 13.873 18.1434C13.873 19.5066 12.9648 19.6599 12.4736 19.6747V19.6731Z"
+                  fill="#1F1AEB" />
+                <path d="M23.6938 10.678H18.8311V12.1286H23.6938V10.678Z" fill="#1F1AEB" />
+                <path
+                  d="M21.3645 12.9824C16.8331 12.9824 16.838 17.5088 16.838 17.5088C16.838 17.5088 16.5265 22.0122 21.3645 22.0122C21.3645 22.0122 25.3964 22.243 25.3964 18.8786H23.3228C23.3228 18.8786 23.3904 20.1462 21.4337 20.1462C21.4337 20.1462 19.3601 20.2847 19.3601 18.0956H25.4657C25.4657 18.0956 26.1333 12.9807 21.3645 12.9807V12.9824ZM19.3386 16.5247C19.3386 16.5247 19.5908 14.7082 21.4123 14.7082C23.2338 14.7082 23.209 16.5247 23.209 16.5247H19.3386V16.5247Z"
+                  fill="#1F1AEB" />
+              </g>
+              <defs>
+                <clipPath id="clip0_45_2">
+                  <rect width="32" height="32" fill="white" />
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+        </div>
+        <div class="copyright">
+          <p>Copyright Avantika Jain 2022</p>
+        </div>
       </div>
     </div>
   </footer>
