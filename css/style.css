@@ -11,12 +11,17 @@ Tertiary Colour (Fire Opal/Light Orange): rgba (222, 100, 73, 1.0), hex: #DE6449
 Font Sizes and Weights
 */
 
+/*-------------------------------------------Start Section---------------------------------------------*/
+
+/*setting the default width of an element to include the padding and the border via the box-sizing property and border-box value*/
 * {
-        box-sizing: border-box;
+  box-sizing: border-box;
 }
 
-/*-----------------------------------------------------------------*/
-/*-----------------------------------------------------------------*/
+/*--------------------------------------------End Section---------------------------------------------*/
+/*-------------------------------------------Start Section---------------------------------------------*/
+/*default body settings*/
+
 
 nav {
         display: inline-block;
@@ -80,10 +85,20 @@ nav > ul > li > a {
 /*-----------------------------------------------------------------*/
 /*-----------------------------------------------------------------*/
 
+.containerAbout {
+        text-align: center;
+        margin: 20px;
+        width: auto;
+}
+
 .containerAbout .topnav {
         text-align: center;
         width: auto;
 }
+
+/*-------------------------------------------Start Section---------------------------------------------*/
+/*default body settings*/
+
 
 body {
         background-color: rgba(21, 21, 21, 1.0);
@@ -162,10 +177,61 @@ a:active {
         /* Fire Opal/Light Orange */
 }
 
-/* Layout styling */
 
+/*CSS code for the button class*/
+.button {
+        display: inline-block;
+        margin-top: 30px;
+        margin-bottom: 60px;
+        /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+        background-color: rgba(31, 26, 235, 1.0);
+        color: rgba(255, 255, 255, 1.0);
+        /* needed to override the default link color */
+        font-weight: 500;
+        font-size: .8em;
+        padding: 10px 90px 10px 90px;
+        border-radius: 100px;
+        border-bottom: 2px solid rgba(31, 26, 235, 1.0);
+        /* width of the border, type, color */
+        transition: 0.2s opacity;
+}
+
+.button:hover {
+        opacity: 0.8;
+        /* Reduces the opacity of the button to 80% */
+        text-decoration: none;
+}
+
+.button.contact {
+        background-color: rgba(255, 255, 255, 1.0);
+        color: rgba(31, 26, 235, 1.0);
+        text-transform: capitalize;
+        margin: 40px 0px 60px 0px;
+        background-position: center;
+}
+
+.button.contact:hover {
+        background-color: rgba(255, 255, 255, 0.8);
+        color: rgba(31, 26, 235, 0.8);
+}
+
+.logo {
+        max-width: 250px;
+        margin: auto;
+}
+
+.caption {
+        font-size: .65em;
+}
+
+}
+
+/*--------------------------------------------End Section---------------------------------------------*/
+/*-------------------------------------------Start Section---------------------------------------------*/
+
+
+/* Layout styling */
 .row {
-    /* Ask Evan how this works in mobile and desktop - confusing */
         margin: 25px 0px:
 
 }
@@ -183,7 +249,7 @@ a:active {
         text-align: left;
 }
 
-.row > div > ul {
+.row1 > div > ul {
         list-style-type: none;
         padding: 0;
 }
@@ -193,11 +259,13 @@ a:active {
         padding: 0;
 }
 
-.row > div > ul > div > li {
+.row1 > div > ul > li {
+        border-style: solid;
         background-color: #323232;
+        color: #fff;
+        border-color: #323232;
         border-radius: 8px;
         padding: 10px 20px;
-        color: #fff;
         text-transform: capitalize;
         text-align: center;
         text-decoration: none;
@@ -205,7 +273,8 @@ a:active {
         background-position: center;
 }
 
-.row2 > div > ul > div > li {
+.row2 > div > ul > li {
+        border-style: solid;
         background-color: #151515;
         color: #fff;
         text-transform: capitalize;
@@ -227,46 +296,81 @@ a:active {
 }
 /* Keep these at the bottom of your css stylesheet so they don't interact with others*/
 
-.button {
-        display: inline-block;
-        margin-top: 30px;
-        margin-bottom: 60px;
-        /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-        background-color: rgba(31, 26, 235, 1.0);
-        color: rgba(255, 255, 255, 1.0);
-        /* needed to override the default link color */
-        font-weight: 500;
-        padding: 10px 120px 10px 120px;
-        border-radius: 100px;
-        border-bottom: 2px solid rgba(31, 26, 235, 1.0);
-        /* width of the border, type, color */
-        transition: 0.2s opacity;
+
+
+/*clear page flow*/
+.row::after {
+          content: "";
+          clear: both;
+          display: table;
 }
 
-.button:hover {
-        opacity: 0.8;
-        /* Reduces the opacity of the button to 80% */
-        text-decoration: none;
+/*float all columns left*/
+[class*="col-"] {
+          padding: 10px;
 }
 
-.button.contact {
-        background-color: rgba(255, 255, 255, 1.0);
-        color: rgba(31, 26, 235, 1.0);
-        text-transform: capitalize;
-        margin: 60px 0px 40px 0px;
-        background-position: center;
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 580px) {
+  .containerIndex {
+        text-align: unset;
+        padding: 20px 0 13px;
+
+}
+.topnav a {
+        width: auto;
+        float: right;
 }
 
-.button.contact:hover {
-        background-color: rgba(255, 255, 255, 0.8);
-        color: rgba(31, 26, 235, 0.8);
+.col-md-6 {
+        width: 50%;
+        float: left;
+        padding-bottom: 40px;
+}
 }
 
-.logo {
-  max-width: 250px;
-  margin: auto;
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {
+  .containerIndex svg {
+        width: auto;
+        text-align: unset;
+}
+nav {
+        width: auto;
+        float: right;
+}
 }
 
-.caption {
-        font-size: .65em;
+
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {
+  .containerIndex svg  {
+        text-align: unset;
+}
+.topnav a {
+    width: auto;
+    float: right;
+}
+}
+
+
+/* ==============================
+Extra-large devices (1920px or larger)
+================================= */
+@media only screen and (min-width: 1920px) {
+  .containerIndex svg {
+        text-align: unset;
+}
+nav {
+        float: right;
+        width: auto;
+}
 }
