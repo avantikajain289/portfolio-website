@@ -1,4 +1,5 @@
-/*
+/*-------------------------------------------Start Section---------------------------------------------
+
 Colours used:
 Primary Colour (Blue): rgba (31, 26, 235, 1.0), hex:#1F1AEB ;
 Primary Colour (White): rgba (255, 255, 255, 1.0), hex: #FFFFFF;
@@ -6,10 +7,9 @@ Secondary Colour (Dark Gray): rgba (21, 21, 21, 1.0), hex: #151515;
 Secondary Colour (Light Gray): rgba (50, 50, 50, 1.0), hex: #323232;
 Tertiary Colour (Light Coral/Light Pink): rgba (246, 130, 140, 1.0), hex: #F6828C;
 Tertiary Colour (Fire Opal/Light Orange): rgba (222, 100, 73, 1.0), hex: #DE6449;
-*/
-/*
-Font Sizes and Weights
-*/
+
+--------------------------------------------End Section---------------------------------------------*/
+
 
 /*-------------------------------------------Start Section---------------------------------------------*/
 
@@ -21,84 +21,6 @@ Font Sizes and Weights
 /*--------------------------------------------End Section---------------------------------------------*/
 /*-------------------------------------------Start Section---------------------------------------------*/
 /*default body settings*/
-
-
-nav {
-        display: inline-block;
-}
-nav > ul {
-        list-style-type: none;
-        padding: 0;
-}
-
-nav > ul > li {
-        display: inline-block;
-}
-
-nav > ul > li > a {
-        padding: 0 15px;
-        text-transform: capitalize;
-        font-weight: 300;
-        color: #fff;
-}
-
-.bg-img {
-        background-image: url("../imgs/portfolio-website/hero-avantika-jain-image.png");
-        min-height: 680px;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        position: relative;
-}
-
-.containerIndex {
-        position: absolute;
-        text-align: center;
-        margin: 20px;
-        width: auto;
-}
-
-.containerIndex svg {
-        width: 250px;
-        height: 48px;
-}
-
-.topnav {
-        overflow: hidden;
-}
-
-.topnav a {
-        float: left;
-        color: #fff;
-        text-align: center;
-        padding: 14px 16px;
-        text-decoration: none;
-        font-size: 20px;
-}
-
-.bg-img h1 {
-        position: absolute;
-        bottom: 0;
-        display: flex;
-}
-
-/*-----------------------------------------------------------------*/
-/*-----------------------------------------------------------------*/
-
-.containerAbout {
-        text-align: center;
-        margin: 20px;
-        width: auto;
-}
-
-.containerAbout .topnav {
-        text-align: center;
-        width: auto;
-}
-
-/*-------------------------------------------Start Section---------------------------------------------*/
-/*default body settings*/
-
 
 body {
         background-color: rgba(21, 21, 21, 1.0);
@@ -112,7 +34,7 @@ body {
         color: rgba(255, 255, 255, 1.0);
 }
 
-h1, h2, h3, h4 h5 {
+h1, h2, h3, h4, h5 {
         line-height: 1.3;
 }
 
@@ -144,17 +66,21 @@ h5 {
         font-weight: 600;
 }
 
+/*setting images to full-width*/
 img {
         width: 100%;
         display: inline-block;
         border-radius: 8px;
 }
 
+/*change the default link color to your primary color (copied from your comments at the top of the document)*/
 a {
-        color: rgba(255, 255, 255, 1.0);
-        /* White */
-        text-decoration: none;
-        /* No underlining */
+        color: rgba(255, 255, 255, 1.0); /* White */
+        text-decoration: none; /* No underlining */
+}
+a:hover {
+  color: #fff;
+  text-decoration: none; /* Underlining when hovering over a link */
 }
 
 a:visited {
@@ -165,16 +91,12 @@ a:visited {
 
 a:hover,
 a:focus {
-        color: rgba(174, 174, 174, 1.0);
-        /* Lighter Gray */
-        text-decoration: underline;
-        /* Underlining when hovering over a link */
+        color: rgba(174, 174, 174, 1.0); /* Lighter Gray */
+        text-decoration: underline; /* Underlining when hovering over a link */
 }
 
-a:active {
-        /* selected link */
-        color: rgba(222, 100, 73, 1.0);
-        /* Fire Opal/Light Orange */
+a:active { /* selected link */
+        color: rgba(222, 100, 73, 1.0); /* Fire Opal/Light Orange */
 }
 
 
@@ -182,17 +104,14 @@ a:active {
 .button {
         display: inline-block;
         margin-top: 30px;
-        margin-bottom: 60px;
-        /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
+        margin-bottom: 60px; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
         background-color: rgba(31, 26, 235, 1.0);
-        color: rgba(255, 255, 255, 1.0);
-        /* needed to override the default link color */
+        color: rgba(255, 255, 255, 1.0); /* needed to override the default link color */
         font-weight: 500;
         font-size: .8em;
-        padding: 10px 90px 10px 90px;
+        padding: 10px 80px 10px 80px;
         border-radius: 100px;
-        border-bottom: 2px solid rgba(31, 26, 235, 1.0);
-        /* width of the border, type, color */
+        border-bottom: 2px solid rgba(31, 26, 235, 1.0); /* width of the border, type, color */
         transition: 0.2s opacity;
 }
 
@@ -202,6 +121,7 @@ a:active {
         text-decoration: none;
 }
 
+/*button rules for the mailto button*/
 .button.contact {
         background-color: rgba(255, 255, 255, 1.0);
         color: rgba(31, 26, 235, 1.0);
@@ -210,12 +130,19 @@ a:active {
         background-position: center;
 }
 
+/*button class hover and active state*/
+
 .button.contact:hover {
         background-color: rgba(255, 255, 255, 0.8);
         color: rgba(31, 26, 235, 0.8);
 }
 
+/*--------------------------------------------End Section---------------------------------------------*/
+/*-------------------------------------------Start Section---------------------------------------------*/
+/*stye the page sections*/
+
 .logo {
+        background-position: center;
         max-width: 250px;
         margin: auto;
 }
@@ -224,17 +151,96 @@ a:active {
         font-size: .65em;
 }
 
+/*--------------------------------------------End Section---------------------------------------------*/
+/*-------------------------------------------Start Section---------------------------------------------*/
+/*stye the page sections*/
+
+
+/*Navigation Styling*/
+nav {
+        display: inline-block;
+        background-position: center;
+
+}
+nav > ul {
+        list-style-type: none;
+        padding: 0;
+}
+
+nav > ul > li {
+        display: inline-block;
+}
+
+nav > ul > li > a {
+        padding: 0 15px;
+        text-transform: capitalize;
+        font-weight: 300;
+        color: #fff;
+}
+
+/* hero styling*/
+.bg-img {
+        background-image: url("../imgs/portfolio-website/hero-avantika-jain-image.png");
+        min-height: 680px;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: relative;
+}
+
+.containerIndex {
+        position: absolute;
+        text-align: center;
+        margin: 20px;
+        width: auto;
+}
+
+.containerIndex img {
+        height: 48px;
+}
+
+.topnav {
+        overflow: hidden;
+}
+
+.topnav a {
+        float: left;
+        color: #fff;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 20px;
+}
+
+.bg-img h1 {
+        position: absolute;
+        bottom: 0;
+        display: flex;
+}
+
+.containerAbout {
+        text-align: center;
+        margin: 20px;
+        width: auto;
+}
+
+.containerAbout .topnav {
+        text-align: center;
+        width: auto;
 }
 
 /*--------------------------------------------End Section---------------------------------------------*/
 /*-------------------------------------------Start Section---------------------------------------------*/
-
-
 /* Layout styling */
+
+.container {
+  padding: 0 15px;
+}
+
 .row {
         margin: 25px 0px:
-
 }
+
 
 .containerfooter {
         text-align: center;
@@ -249,21 +255,22 @@ a:active {
         text-align: left;
 }
 
+
 .row1 > div > ul {
         list-style-type: none;
         padding: 0;
 }
 
-.row2 > div > ul {
+.row2 > div > ul  {
         list-style-type: none;
         padding: 0;
 }
 
+
 .row1 > div > ul > li {
-        border-style: solid;
+        border: solid #323232;
         background-color: #323232;
         color: #fff;
-        border-color: #323232;
         border-radius: 8px;
         padding: 10px 20px;
         text-transform: capitalize;
@@ -282,7 +289,7 @@ a:active {
         border: 2px solid #1F1AEB;
         border-radius: 8px;
         padding: 10px 20px;
-        margin: 20px 0;
+        margin: 19px 0;
         background-position: center;
 }
 
@@ -294,9 +301,18 @@ a:active {
         margin: auto;
         margin-bottom: 30px;
 }
+
+.col-sm-3 {
+  width: 50%;
+  float: left;
+  font-size: .8em;
+}
+
+/*--------------------------------------------End Section---------------------------------------------*/
+/*-------------------------------------------Start Section---------------------------------------------*/
+/*Media Queries*/
+
 /* Keep these at the bottom of your css stylesheet so they don't interact with others*/
-
-
 
 /*clear page flow*/
 .row::after {
@@ -305,8 +321,12 @@ a:active {
           display: table;
 }
 
+
 /*float all columns left*/
 [class*="col-"] {
+          font-size: .8em;
+          width:50%;
+          float: left;
           padding: 10px;
 }
 
@@ -314,22 +334,47 @@ a:active {
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
-@media only screen and (min-width: 580px) {
-  .containerIndex {
-        text-align: unset;
-        padding: 20px 0 13px;
+@media only screen and (min-width: 640px) {
+body {
+        font-size: 18px;
+}
 
+.containerIndex {
+        text-align: unset;
+        width: 100%;
 }
+
+.containerIndex img {
+        width: 40%;
+}
+
+.containerAbout {
+        text-align: left;
+}
+
+.logo {
+        text-align: left;
+        max-width: 250px;
+        display: inline-block;
+}
+
+ .topnav {
+        overflow: inherit;
+        text-align: right;
+}
+
+
 .topnav a {
-        width: auto;
-        float: right;
-}
+    float: left;
+  }
 
 .col-md-6 {
+        font-size: 18px;
         width: 50%;
-        float: left;
         padding-bottom: 40px;
 }
+
+
 }
 
 
@@ -337,14 +382,51 @@ Medium devices (640px and larger)
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
-  .containerIndex svg {
+
+
+  body {
+          font-size: 18px;
+  }
+
+  .container {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+  }
+
+
+  .containerIndex img {
         width: auto;
         text-align: unset;
 }
-nav {
+
+
+  nav {
         width: auto;
         float: right;
 }
+
+.col-lg-3 {
+        width: calc(100%/4);
+        padding-bottom: 40px;
+}
+
+  .col-lg-7 {
+        width: calc(100%/3);
+        padding-bottom: 40px;
+        float: left;
+}
+
+.col-lg-5 {
+        width: calc(100%/3);
+        padding-bottom: 40px;
+        float: none;
+}
+
+
+
+
+
 }
 
 
@@ -352,7 +434,7 @@ nav {
 X-large devices (1440px or larger)
 ================================= */
 @media only screen and (min-width: 1440px) {
-  .containerIndex svg  {
+  .containerIndex img  {
         text-align: unset;
 }
 .topnav a {
@@ -366,11 +448,50 @@ X-large devices (1440px or larger)
 Extra-large devices (1920px or larger)
 ================================= */
 @media only screen and (min-width: 1920px) {
-  .containerIndex svg {
+  .containerIndex img {
         text-align: unset;
 }
 nav {
         float: right;
         width: auto;
 }
+}
+
+/*--------------------------------------------End Section---------------------------------------------*/
+/*-------------------------------------------Start Section---------------------------------------------*/
+/*SVG Animation*/
+
+.berlin-illustration {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+@keyframes color-change {
+  0% {fill: #edc655;}
+  50% {fill: #fcffad;}
+  100% {fill: #f76414;}
+}
+
+.sun {
+  animation: 4s color-change infinite alternate linear;
+}
+
+
+@keyframes cloud-move {
+  from {transform: translate(0,50px);}
+  to {transform: translate(200px,50px);}
+}
+
+.cloud-front {
+  animation: 30s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {transform: translate(446px,48px);}
+  to {transform: translate(100px, 48px);}
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
 }
