@@ -40,7 +40,7 @@ h1, h2, h3, h4, h5 {
 
 h1 {
         font-family: 'Noto Serif JP';
-        font-size: 2.5em;
+        font-size: 2.2em;
         font-weight: 700;
 }
 
@@ -160,8 +160,8 @@ a:active { /* selected link */
 nav {
         display: inline-block;
         background-position: center;
-
 }
+
 nav > ul {
         list-style-type: none;
         padding: 0;
@@ -233,12 +233,17 @@ nav > ul > li > a {
 /*-------------------------------------------Start Section---------------------------------------------*/
 /* Layout styling */
 
+h1 {
+        margin-left: 30px;
+        margin-bottom: 20px;
+}
+
 .container {
   padding: 0 15px;
 }
 
 .row {
-        margin: 25px 0px:
+        margin: 30px 0px:
 }
 
 
@@ -252,22 +257,24 @@ nav > ul > li > a {
 
 .containerfooter p {
         margin: auto;
-        text-align: left;
 }
 
+.col-sm-12 {
+        width: 50%;
+        float: left;
+}
 
-.row1 > div > ul {
+.rowrow1 > div > .col-sm-12 > ul {
         list-style-type: none;
         padding: 0;
 }
 
-.row2 > div > ul  {
+.col-sm-12  ul  {
         list-style-type: none;
         padding: 0;
 }
 
-
-.row1 > div > ul > li {
+.col-sm-12 > ul > li {
         border: solid #323232;
         background-color: #323232;
         color: #fff;
@@ -302,11 +309,27 @@ nav > ul > li > a {
         margin-bottom: 30px;
 }
 
-.col-sm-3 {
-  width: 50%;
-  float: left;
-  font-size: .8em;
+.col-sm-12 {
+        font-size: .8em;
 }
+
+.previous-project {
+        display: inline-block;
+        float: left;
+        margin-bottom: 60px;
+}
+
+.next-project {
+        float: right;
+        margin-bottom: 60px;
+}
+
+.top-icon {
+        display: block;
+        text-align: center;
+}
+
+
 
 /*--------------------------------------------End Section---------------------------------------------*/
 /*-------------------------------------------Start Section---------------------------------------------*/
@@ -325,8 +348,6 @@ nav > ul > li > a {
 /*float all columns left*/
 [class*="col-"] {
           font-size: .8em;
-          width:50%;
-          float: left;
           padding: 10px;
 }
 
@@ -363,7 +384,6 @@ body {
         text-align: right;
 }
 
-
 .topnav a {
     float: left;
   }
@@ -371,9 +391,54 @@ body {
 .col-md-6 {
         font-size: 18px;
         width: 50%;
+        float: left;
         padding-bottom: 40px;
 }
 
+.col-md-6 h3 {
+        margin-top: -2px;
+}
+
+h1{
+        font-size: 2.4em;
+        margin-left: 20px;
+}
+
+.col-md-3 {
+        width:25%;
+        float: left;
+        padding-bottom: 40px;
+}
+
+.palette-screen {
+        float: left;
+        margin-top: 120px;
+}
+
+.col-md-2 {
+        width: 26%;
+        float: left;
+        padding-bottom: 40px;
+        font-size: 18px;
+}
+
+.col-md-4 {
+        width: 34%;
+        float: left;
+        padding-bottom: 40px;
+        font-size: 18px;
+}
+
+.containergray {
+        border: #323232 solid;
+        background-color: #323232;
+        padding: 15px;
+        margin: 0;
+}
+
+.button {
+        text-align: center;
+}
 
 }
 
@@ -407,25 +472,33 @@ Large devices (1024px or larger)
 }
 
 .col-lg-3 {
-        width: calc(100%/4);
         padding-bottom: 40px;
 }
 
   .col-lg-7 {
-        width: calc(100%/3);
+        width: 50%;
+        padding-bottom: 40px;
+}
+
+.col-lg-5 {
+        width: 50%;
         padding-bottom: 40px;
         float: left;
 }
 
-.col-lg-5 {
-        width: calc(100%/3);
-        padding-bottom: 40px;
-        float: none;
+.rowrow1 {
+  border-style: solid;
+  background-color: #323232;
 }
 
+.palette-screen {
+        float: left;
+        margin-top: 80px;
+}
 
-
-
+.col-lg-1.5 .home-screen {
+        margin-bottom: 25px;
+}
 
 }
 
