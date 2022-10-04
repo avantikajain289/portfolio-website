@@ -1,2 +1,11 @@
-alert("FUN FACT! I recently re-discovered the game Dangerous Dave. Press OK if you like it too or not.")
-console.log("I'm not Dangerous Dave");
+alert("Welcome to my world!")
+console.log("Welcome to my world");
+
+function menuToggle() {
+  var x = document.getElementById('myNavtoggle');
+  if (x.className === 'navtoggle') {
+    x.className += ' responsive';
+  } else {
+    x.className = 'navtoggle';
+  }
+}

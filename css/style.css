@@ -141,9 +141,13 @@ a:active { /* selected link */
 /*-------------------------------------------Start Section---------------------------------------------*/
 /*stye the page sections*/
 
+.containerIndex img {
+        width: 150px;
+}
+
 .logo {
         background-position: center;
-        max-width: 250px;
+        max-width: 150px;
         margin: auto;
 }
 
@@ -157,14 +161,11 @@ a:active { /* selected link */
 
 
 /*Navigation Styling*/
-nav {
-        display: inline-block;
-        background-position: center;
-}
 
 nav > ul {
         list-style-type: none;
         padding: 0;
+        margin: 0;
 }
 
 nav > ul > li {
@@ -178,6 +179,28 @@ nav > ul > li > a {
         color: #fff;
 }
 
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle.responsive li  {
+  display: block;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+  border-top: 1px solid rgba(255,255,255,0.5);
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
+}
+
+
 /* hero styling*/
 .bg-img {
         background-image: url("../imgs/portfolio-website/hero-avantika-jain-image.png");
@@ -190,7 +213,6 @@ nav > ul > li > a {
 
 .containerIndex {
         position: absolute;
-        text-align: center;
         margin: 20px;
         width: auto;
 }
@@ -206,10 +228,21 @@ nav > ul > li > a {
 .topnav a {
         float: left;
         color: #fff;
-        text-align: center;
         padding: 14px 16px;
         text-decoration: none;
         font-size: 20px;
+}
+
+.navtoggle, .navtoggle.responsive {
+        position: relative;
+}
+
+.navtoggle li .icon {
+        position: absolute;
+        right: 0;
+        top: 2px;
+        font-size: 20px;
+        padding: 0;
 }
 
 .bg-img h1 {
@@ -385,8 +418,20 @@ body {
 }
 
 .topnav a {
-    float: left;
+        float: left;
   }
+
+  nav > ul {
+        margin: 1em 0;
+}
+
+.navtoggle li:not(:last-child) {
+        display: inline-block;
+}
+
+.navtoggle li:last-child {
+  display: none;
+}
 
 .col-md-6 {
         font-size: 18px;
