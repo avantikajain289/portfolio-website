@@ -10,22 +10,25 @@
   <link rel="stylesheet" href="www.cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
   <link rel="stylesheet" type="text/css" href="css/style.css">
   <link href="www.fonts.googleapis.com/css2?family=Exo+2:wght@400;500;600;700&family=Noto+Serif+JP:wght@600&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/bfd2d3da4e.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
   <header>
     <div class="containerAbout">
+      <div class="navtoggle" id="myNavtoggle">
       <div class="logo">
         <img src="imgs/portfolio-website/avantika-jain-logo-mobile.svg" alt="Avantika Jain logo">
       </div>
-
       <nav class="topnav">
         <ul>
           <li><a href="index.html">Work</a></li>
           <li><a href="about.html">About</a></li>
           <li><a href="#footer">Contact</a></li>
+          <li><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fa-solid fa-bars"></i></a></li>
         </ul>
       </nav>
+    </div>
     </div>
   </header>
 
@@ -34,7 +37,7 @@
       <div class="container">
         <picture>
           <source srcset="imgs/portfolio-website/portrait-shot.jpeg" media="(max-width:767px)">
-          <img src="imgs/portfolio-website/portrait-shot.jpeg" alt="Avantika Jain">
+          <img src="imgs/portfolio-website/portrait-shot-long.png" alt="Avantika Jain">
         </picture>
       </div>
       <div class="container">
@@ -159,7 +162,7 @@
       </div>
     </div>
   </footer>
-
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
   <script src="js/scripts.js"></script>
 </body>
 

@@ -183,11 +183,11 @@ nav > ul > li > a {
   display: none;
 }
 
-.navtoggle.responsive li  {
+.navtoggle .responsive li  {
   display: block;
 }
 
-.navtoggle.responsive nav {
+.navtoggle .responsive nav {
   padding: 24px 0 0;
 }
 .navtoggle.responsive li  {
@@ -196,7 +196,7 @@ nav > ul > li > a {
   border-top: 1px solid rgba(255,255,255,0.5);
 }
 
-.navtoggle.responsive li:last-child  {
+.navtoggle .responsive li:last-child  {
   padding: 0 0 10px;
 }
 
@@ -226,7 +226,7 @@ nav > ul > li > a {
 }
 
 .topnav a {
-        float: left;
+        /*float: left;*/
         color: #fff;
         padding: 14px 16px;
         text-decoration: none;
@@ -362,6 +362,10 @@ h1 {
         text-align: center;
 }
 
+#reduce .row {
+    margin-bottom: -40px;
+}
+
 
 
 /*--------------------------------------------End Section---------------------------------------------*/
@@ -418,7 +422,7 @@ body {
 }
 
 .topnav a {
-        float: left;
+        /*float: left;*/
   }
 
   nav > ul {
@@ -450,7 +454,7 @@ h1{
 }
 
 .col-md-3 {
-        width:25%;
+        width: 25%;
         float: left;
         padding-bottom: 40px;
 }
@@ -468,22 +472,35 @@ h1{
 }
 
 .col-md-4 {
-        width: 34%;
+        width: 33%;
         float: left;
         padding-bottom: 40px;
         font-size: 18px;
 }
 
 .containergray {
+        min-height: 450px;
         border: #323232 solid;
         background-color: #323232;
         padding: 15px;
         margin: 0;
 }
 
+.coltogether {
+        width: 50%;
+        float: left;
+        margin-bottom: 60px;
+}
+
+.coltogether img {
+        min-height: 450px;
+        border-radius: 0;
+}
+
 .button {
         text-align: center;
 }
+
 
 }
 
