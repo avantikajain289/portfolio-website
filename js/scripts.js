@@ -1,5 +1,5 @@
-alert("Welcome to my world!")
-console.log("Welcome to my world");
+/* alert("Welcome to my world!")
+console.log("Welcome to my world"); */
 
 function menuToggle() {
   var x = document.getElementById('myNavtoggle');
