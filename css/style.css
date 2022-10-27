@@ -47,7 +47,7 @@ h1 {
 h2 {
         font-size: 1.67em;
         font-weight: 600;
-        color: #1F1AEB;
+        color: #4C48EF;
 }
 
 h3 {
@@ -105,13 +105,13 @@ a:active { /* selected link */
         display: inline-block;
         margin-top: 30px;
         margin-bottom: 60px; /* since the <a> tag is inline by default, we need to change this to inline-block, but more on this in the next exercise */
-        background-color: rgba(31, 26, 235, 1.0);
-        color: rgba(255, 255, 255, 1.0); /* needed to override the default link color */
+        background-color: #4C48EF;
+        color: #fff; /* needed to override the default link color */
         font-weight: 500;
         font-size: .8em;
         padding: 10px 80px 10px 80px;
         border-radius: 100px;
-        border-bottom: 2px solid rgba(31, 26, 235, 1.0); /* width of the border, type, color */
+        border-bottom: 2px solid #FFF); /* width of the border, type, color */
         transition: 0.2s opacity;
 }
 
@@ -123,8 +123,8 @@ a:active { /* selected link */
 
 /*button rules for the mailto button*/
 .button.contact {
-        background-color: rgba(255, 255, 255, 1.0);
-        color: rgba(31, 26, 235, 1.0);
+        background-color: #FFF;
+        color: #4C48EF;
         text-transform: capitalize;
         margin: 40px 0px 60px 0px;
         background-position: center;
@@ -276,7 +276,7 @@ h1 {
 }
 
 .row {
-        margin: 30px 0px:
+        margin: 30px 0px;
 }
 
 
@@ -326,7 +326,7 @@ h1 {
         color: #fff;
         text-transform: capitalize;
         text-align: center;
-        border: 2px solid #1F1AEB;
+        border: 2px solid #4C48EF;
         border-radius: 8px;
         padding: 10px 20px;
         margin: 19px 0;
